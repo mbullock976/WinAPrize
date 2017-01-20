@@ -1,4 +1,3 @@
-User 
 # WinAPrize
 Customer Loyalty Prize Giveaway
 
