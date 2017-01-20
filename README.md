@@ -1,3 +1,4 @@
+
 # WinAPrize
 Customer Loyalty Prize Giveaway
 
@@ -25,3 +26,16 @@ Website Usage Instructions:
 - customer page submit writes customer and associated codes to DB
 - Marketing link in the nav bar presents user with Pass Key (this is 1234). This will take marketing staff to a page that they can change total winning limit
 - HttpPosts check if customer already exists in DB.
+
+
+Locations:
+- WinAPrize\angularJs contain js scripts - modules, config, services, controllers, views.
+- WinAPrize\Views\Shared\_Layout.cshtml - data-ng-app initialised, and nav bar that links to Marketing pages, and angularjs scripts
+- WinAPrize\Views\Home\Index.cshtml - contains the refs the \angularJs\ scripts
+- WinAPrize\WebConfig.cs - EF DB connection string setting.
+- WinAPrize\Controllers\WebApi - Restful Web Api controllers
+- WinAPrize.Platform\Implementation\DataLayer - section for EF DBContext
+- WinAPrize.Platform\Migartions - section for EF Code first Migrations
+- WinAPrize.Platform\Models - section for business models 
+- WinAPrizeAPI.UnitTests - server side unit tests
+- WinAPrize.Tests - client side unit test
