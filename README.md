@@ -4,6 +4,8 @@ Customer Loyalty Prize Giveaway
 
 Solution Composition:
 
+(* Please refer to WinAPrize_Architecture.png image found on the root of this repository *)
+
 - ASP.NET
 - RestFul Web APIs
 - Code-First Entity Framework to SQL DB
