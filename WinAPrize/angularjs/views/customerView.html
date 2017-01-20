@@ -1,0 +1,113 @@
+﻿<div class="row">
+    <div id="angularView" ui-view="">
+        <form class="form-horizontal" name="newsubmitCustomerForm" novalidate data-ng-submit="save()">
+            <fieldset>
+
+                <h3>
+                    Congratulations You've Won - Claim your prize now  !!!.
+                </h3>
+                <br />
+
+                <legend>Submit Customer Details:</legend>
+
+                <h4>
+                    Please enter your details below and so we can deliver your prize to you:
+                </h4>
+                <br />
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="firstName">First Name:</label>
+
+                    <div class="col-sm-9">
+                        <input class="form-control" type="text" id="firstName" name="firstName" placeholder="enter first name here"
+                               data-ng-model="newCustomerModel.firstName" size="100"
+                               required>                        
+                        <span class="error" data-ng-show="newsubmitCustomerForm.firstName.$error.required">*</span>
+                    </div>                    
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="lastName">Last Name:</label>
+
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="lastName" name="lastName" placeholder="enter last name here"
+                               data-ng-model="newCustomerModel.lastName" size="100"
+                               required>
+                        <span class="error" data-ng-show="newsubmitCustomerForm.lastName.$error.required">*</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="address">Address:</label>
+
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="address" name="address" placeholder="enter address here"
+                               data-ng-model="newCustomerModel.address" size="100"
+                               required>
+                        <span class="error" data-ng-show="newsubmitCustomerForm.address.$error.required">*</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Town/City:</label>
+                    <div class="col-sm-10">
+                        <select id="townOrCity" name="townOrCity"
+                                data-ng-options="i as i for i in townOrCityList" class="form-control dropdown" data-ng-model="newCustomerModel.townOrCity">
+                            <option value="" required></option>
+                        </select>
+                        <span class="error" data-ng-show="newsubmitCustomerForm.townOrCity.$error.required">*</span>
+
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="telephoneNo">Telephone:</label>
+
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="telephoneNo" name="telephoneNo" placeholder="enter telephone No here"
+                               data-ng-model="newCustomerModel.telephoneNo" size="100"
+                               required>
+                        <span class="error" data-ng-show="newsubmitCustomerForm.telephoneNo.$error.required">*</span>
+                    </div>
+                </div>                              
+                
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="postCode">Post Code</label>
+
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="postCode" name="postCode" placeholder="enter postCode here"
+                               data-ng-model="newCustomerModel.postCode" size="100"
+                               required>
+                        <span class="error" data-ng-show="newsubmitCustomerForm.postCode.$error.required">*</span>
+                    </div>
+                </div>
+                              
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Country:</label>
+                    <div class="col-sm-10">
+                        <select id="country" name="country"
+                                data-ng-options="i as i for i in countryList" class="form-control dropdown" data-ng-model="newCustomerModel.country">
+                            <option value="" required></option>
+                        </select>
+                        <span class="error" data-ng-show="newsubmitCustomerForm.country.$error.required">*</span>
+
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="submit" class="btn btn-primary" value="Submit" data-ng-disabled="newsubmitCustomerForm.$invalid">
+                    </div>
+                </div>
+
+                <br />
+
+                <h4>Once again Well Done, we hope you enjoy your prize!...and thank you for being such a loyal customer!!!</h4>
+
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+

@@ -1,0 +1,31 @@
+﻿<div>
+    <div id="angularView" ui-view="">
+        <form name="myMarketingForm" novalidate data-ng-submit="save()">
+            <fieldset>
+                <div class="form-group">
+                    <label class="control-label" for="totalWinnersLimit">Total Winners Limit:</label>
+
+                    <div>
+                        <input class="form-control" type="text" id="totalWinnersLimit" name="" placeholder="enter total winners limit count here"
+                               data-ng-model="model.totalWinnersLimit" size="100"
+                               required>
+                    </div>
+                </div>
+                <br />
+                
+                <div class="form-group">
+                    <div>
+                        <input type="submit" class="btn btn-primary" value="Submit" data-ng-disabled="myMarketingForm.$invalid">
+                    </div>
+                </div>
+
+                <br />
+                <h4 data-ng-show="accessDenied">{{accessDenied}}</h4>
+            </fieldset>
+        </form>
+        <br/>
+        <h4 data-ng-show="lastSavedDateTime">{{lastSavedDateTime}}</h4>
+        <h4 data-ng-show="errorMessage">{{errorMessage}}</h4>
+
+    </div>
+</div>

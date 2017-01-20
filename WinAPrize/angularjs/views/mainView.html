@@ -1,0 +1,42 @@
+﻿
+    <div class="row">
+        <div id="angularView" ui-view="">
+            <form name="newsubmitCouponForm" novalidate data-ng-submit="save()">
+                <fieldset>
+                    
+                    <div class="jumbotron">
+                    </div>
+
+                    <h3>
+                        Welcome Back ! 
+                    </h3>
+                    <h4>As a way of thanking you for your loyalty, we have issued you a coupon code that could win you a mystery prize!.</h4>
+                    <br />
+
+                    <legend>Submit Coupon:</legend>
+
+                    <h4>
+                        Please enter the code found on your coupon and press Submit to see if you have won.
+                        GOOD LUCK !
+                    </h4>
+                    <br />
+
+                    <label class="control-label" for="coupon">Coupon Code:</label>
+                    <br />
+                    <input class="form-control" type="text" id="coupon" name="coupon" placeholder="enter code here"
+                           data-ng-model="newEntryModel.couponCode" size="100"
+                           required data-ng-minlength="6">
+                    <span class="error" data-ng-show="newsubmitCouponForm.coupon.$error.required">*</span>
+                    <span class="error" data-ng-show="newsubmitCouponForm.coupon.$error.minlength">Minimum 6 characters</span>
+                    <br />
+                    <input type="submit" class="btn btn-primary" value="Submit" data-ng-disabled="newsubmitCouponForm.$invalid">
+
+                </fieldset>
+            </form>
+            <br/>
+            <h4 id="pleaseWaitMsg" data-ng-show="pleaseWaitMsg">{{pleaseWaitMsg}}</h4>
+            <h4 id="retryMessage" data-ng-show="retryMessage">{{retryMessage}}</h4>
+        </div>
+    </div>        
+
+

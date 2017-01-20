@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    ViewBag.InitModule = "mainModule";
+}
+
+@section Scripts{
+    
+    <!-- Main Angular Module-->
+    <script src="~/angularjs/modules/app.js"></script>
+    
+    <script src="~/angularjs/config/config.js"></script>
+    
+    <script src="~/angularjs/services/dataService.js"></script>
+    
+    <script src="~/angularjs/controllers/loginController.js"></script>    
+    
+    <script src="~/angularjs/controllers/marketingController.js"></script>       
+
+    <script src="~/angularjs/controllers/customerController.js"></script>       
+
+    <script src="~/angularjs/controllers/mainController.js"></script>
+       
+}
+
+
+<div id="mainView" ui-view=""></div>

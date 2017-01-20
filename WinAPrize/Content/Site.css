@@ -1,0 +1,128 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    
+    padding: 0px 6%;    
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+#header {
+    float: left;
+    width: 100%;
+    
+    
+}
+
+    #header h1 {
+        font-size: 42px;
+        float: left;
+        margin: 20px;
+        text-decoration: none;        
+    }
+
+    #header h1 a {
+        text-decoration: none;
+    }
+
+    #header h1 a, h3 em {
+        color: white;
+    }
+
+    
+ul {
+    list-style-type: square;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+ul li {
+    font-size: 16px;    
+}
+
+#main {
+    overflow: hidden;
+    padding: 0 0 15px 10px;
+    float: left;
+}
+
+ /******************** Top Navigation ************************/
+ul#navlist {
+    float: right;
+    margin: 30px;
+    color: white
+    
+}
+
+    ul#navlist li {
+        display: inline;
+    }
+
+        ul#navlist li a {
+            
+            padding: 0px;
+            margin: 5px;
+            color: white;
+            text-decoration: none;
+            float: left;
+        }
+
+        ul#navlist li:first-child a {
+            border: none;
+        }
+
+        ul#navlist li a:hover {
+            color: #F6855E;
+        }
+
+        ul#navlist li a#storeAccountNavbarItem {
+            color: white
+        }
+
+/********************* End top navigation ***************************/
+
+/********************* Begin angularView Div ***************************/
+
+#angularView {
+    padding: 10px
+}
+
+/********************* End angularView Div ***************************/
+
+#retryMessage {
+    color: red
+}
+
+#pleaseWaitMsg {
+    color: green
+}
+
+/******************** StoreView Jumbatron image ************************/
+
+.jumbotron {
+    background: url(/content/images/customer-loyalty.png) no-repeat;
+    height: 300px;
+    width: 700px;
+    
+        
+}
