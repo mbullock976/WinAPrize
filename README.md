@@ -1,4 +1,4 @@
-
+User 
 # WinAPrize
 Customer Loyalty Prize Giveaway
 
@@ -30,7 +30,7 @@ Website Usage Instructions:
 - HttpPosts check if customer already exists in DB.
 
 
-Locations:
+Useful Locations:
 - WinAPrize\angularJs contain js scripts - modules, config, services, controllers, views.
 - WinAPrize\Views\Shared\_Layout.cshtml - data-ng-app initialised, and nav bar that links to Marketing pages, and angularjs scripts
 - WinAPrize\Views\Home\Index.cshtml - contains the refs the \angularJs\ scripts
